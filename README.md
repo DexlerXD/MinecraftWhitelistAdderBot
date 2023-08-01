@@ -3,3 +3,8 @@ A Discord bot which is capable of adding usernames to the whitelist on the serve
 I've created this for my own purposes, but I'm pretty sure there's a lot of RCON discord bots out there.\
 If you need something very simple as that, you can freely use it.\
 This bot was written using [Discord.Net](https://github.com/discord-net/Discord.Net) and [rconsharp](https://github.com/stefanodriussi/rconsharp).
+
+### Build guide
+1. clone this repo
+2. either build it inside IDE, or use dotnet `dotnet publish -c Release`
+3. you're done!

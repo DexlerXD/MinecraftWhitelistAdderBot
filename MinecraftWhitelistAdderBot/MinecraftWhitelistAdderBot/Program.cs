@@ -54,11 +54,12 @@ namespace MinecraftWhitelistAdderBot
             var addToWhiteList = new SlashCommandBuilder()
                 .WithName("add")
                 .WithDescription("Adds username to whitelist.")
+                .WithDMPermission(false)
                 .AddOption("username", ApplicationCommandOptionType.String, "Username to add", true);
 
             try
             {
-                await discordClient.CreateGlobalApplicationCommandAsync(addToWhiteList.Build()); 
+                await discordClient.CreateGlobalApplicationCommandAsync(addToWhiteList.Build());
             }
             catch (HttpException exception)
             {
